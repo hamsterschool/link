@@ -7,9 +7,13 @@
     <title>Title</title>
 </head>
 <body>
+    <button id="butConnect" type="button">Connect</button>
     <script>
-        const scanner = new Scanner();
-        scanner.startScan(null, null, res => {
+        const butConnect = document.getElementById('butConnect');
+        butConnect.addEventListener('click', () => {
+            const scanner = new Scanner();
+            scanner.startScan(null, null, res => {
+            });
         });
     </script>
 </body>
